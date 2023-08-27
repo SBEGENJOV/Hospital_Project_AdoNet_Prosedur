@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCB26A9C-3152-4EB9-9E8F-B615CA52385E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hastane_procedur</RootNamespace>
+    <AssemblyName>hastane_procedur</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asistan_bilgiler_doktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asistan_bilgiler_doktor.Designer.cs">
+      <DependentUpon>asistan_bilgiler_doktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="asistan_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asistan_giris.Designer.cs">
+      <DependentUpon>asistan_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="asistan_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asistan_sayfa.Designer.cs">
+      <DependentUpon>asistan_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_bilgiler_doktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktor_bilgiler_doktor.Designer.cs">
+      <DependentUpon>doktor_bilgiler_doktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktor_giris.Designer.cs">
+      <DependentUpon>doktor_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktor_raporlama.Designer.cs">
+      <DependentUpon>doktor_raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktor_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktor_sayfa.Designer.cs">
+      <DependentUpon>doktor_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_bilgiler_doktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hasta_bilgiler_doktor.Designer.cs">
+      <DependentUpon>hasta_bilgiler_doktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hasta_sayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hasta_sayfa.Designer.cs">
+      <DependentUpon>hasta_sayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcı_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanıcı_giris.Designer.cs">
+      <DependentUpon>kullanıcı_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poliklinik_bilgiler_doktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poliklinik_bilgiler_doktor.Designer.cs">
+      <DependentUpon>poliklinik_bilgiler_doktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recete_bilgiler_doktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recete_bilgiler_doktor.Designer.cs">
+      <DependentUpon>recete_bilgiler_doktor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="asistan_bilgiler_doktor.resx">
+      <DependentUpon>asistan_bilgiler_doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asistan_giris.resx">
+      <DependentUpon>asistan_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asistan_sayfa.resx">
+      <DependentUpon>asistan_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktor_bilgiler_doktor.resx">
+      <DependentUpon>doktor_bilgiler_doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktor_giris.resx">
+      <DependentUpon>doktor_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktor_raporlama.resx">
+      <DependentUpon>doktor_raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doktor_sayfa.resx">
+      <DependentUpon>doktor_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hasta_bilgiler_doktor.resx">
+      <DependentUpon>hasta_bilgiler_doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hasta_sayfa.resx">
+      <DependentUpon>hasta_sayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanıcı_giris.resx">
+      <DependentUpon>kullanıcı_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poliklinik_bilgiler_doktor.resx">
+      <DependentUpon>poliklinik_bilgiler_doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="recete_bilgiler_doktor.resx">
+      <DependentUpon>recete_bilgiler_doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
